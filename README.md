@@ -15,8 +15,8 @@ A lightweight demonstration project showcasing how to evaluate Responsible AI (R
 
 - Python 3.8 or later
 - Azure subscription with access to:
-  - **Main Azure OpenAI deployment** (`azure-openai-ppe`, East US, `gpt-4o-mini-autogen`)
-  - **Azure AI Foundry resource** (`azure-openai-eval-ppe`, East US 2 or supported region)
+  - **Main Azure OpenAI deployment** in East US with a chat deployment (e.g., `gpt-4o-mini`)
+  - **Azure AI Foundry resource** in East US 2 or other supported region for Safety Evaluations SDK
   - Entra ID credentials (via Azure CLI: `az login`)
 
 ### 2. Setup
@@ -106,17 +106,17 @@ Results saved to:
 
 **Inference Resource**
 ```
-AZURE_OPENAI_ENDPOINT=https://azure-openai-ppe.openai.azure.com/
-AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=gpt-4o-mini-autogen
+AZURE_OPENAI_ENDPOINT=https://<your-resource-name>.openai.azure.com/
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME=<your-deployment-name>
 AZURE_OPENAI_API_VERSION=2024-12-01-preview
 ```
 
 **Evaluation Resource**
 ```
-EVAL_OPENAI_ENDPOINT=https://azure-openai-eval-ppe.openai.azure.com/
-EVAL_AZURE_AI_PROJECT_NAME=ai-project-eval
-EVAL_AZURE_RESOURCE_GROUP=resource-group-eval
-EVAL_AZURE_SUBSCRIPTION_ID=your-subscription-id
+EVAL_OPENAI_ENDPOINT=https://<your-eval-resource-name>.openai.azure.com/
+EVAL_AZURE_AI_PROJECT_NAME=<your-ai-foundry-project-name>
+EVAL_AZURE_RESOURCE_GROUP=<your-resource-group>
+EVAL_AZURE_SUBSCRIPTION_ID=<your-subscription-id>
 ```
 
 ### Webpage Sources
