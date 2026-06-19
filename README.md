@@ -1,4 +1,4 @@
-# RAI Bootcamp Demo: Groundedness & Harmful Content Evaluation
+# Responsible AI Bootcamp Demo: Groundedness & Harmful Content Evaluation
 
 A lightweight demonstration project showcasing how to evaluate Responsible AI (RAI) risks using **Azure AI Foundry Safety Evaluations SDK**. This project demonstrates:
 
